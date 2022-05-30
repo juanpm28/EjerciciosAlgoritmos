@@ -1,14 +1,15 @@
-// Solicitar 3 números (entre el 1 y el 100)  y definir cual es el mayor
-// Solicitar 3 números (entre el 1 y el 100)  y definir el menor de tres números
-
-// let numero1 = prompt("Elige un número del 1 al 100", "");
-
-// let numero2 = prompt("Elige un número del 1 al 100", "");
-
-
-// let numero3 = prompt("Elige un número del 1 al 100", "");
+// 1. Solicitar 3 números (entre el 1 y el 100)  y definir cual es el mayor
+// 2. Solicitar 3 números (entre el 1 y el 100)  y definir el menor de tres números
+// 3. Realizar un algortimo para adivinar un número entre el 1 y el 100 en el menor número de pasos posibles
+// 4. Solicitar un entero (entre el 100 y el 200) y determinar si es múltiplo de 3
+// 5. Elaborar un algoritmo para leer 3 números y determinar sí uno es la suma de los otros dos
+// 6. Elabora un algoritmo para leer un número y determinar si es par o impar
 
 // 1.-
+
+// let numero1 = prompt("Elige un número del 1 al 100", "");
+// let numero2 = prompt("Elige un número del 1 al 100", "");
+// let numero3 = prompt("Elige un número del 1 al 100", "");
 
 // if ((numero1 > numero2) && (numero1 > numero3) ) {
 //     alert(numero1 + " es el número mayor");
@@ -22,6 +23,10 @@
 
 // 2.-
 
+// let numero1 = prompt("Elige un número del 1 al 100", "");
+// let numero2 = prompt("Elige un número del 1 al 100", "");
+// let numero3 = prompt("Elige un número del 1 al 100", "");
+
 // if ((numero1 <= numero2) && (numero1 <= numero3) ) {
 //     alert(numero1 + " es el número más chico");
 
@@ -32,6 +37,30 @@
 //     alert(numero3 + " es el número más chico");
 // } 
 
+
+// 3.-
+
+// function Adivinar() {
+//     let superior = 100;
+//     let inferior = 0;
+//     let noEncontrado = true;
+//     while(noEncontrado) {
+//       let mid = parseInt((inferior + ((superior-inferior)) /2));
+//       if (((superior-inferior)/2)<1) {
+//         noEncontrado=false;
+//         alert("Tu número es el " + (parseInt(mid)+1));
+//         break;
+//       } // if
+//       let res = confirm("Tu número es menor o igual a " + mid);
+//       if (res) {
+//         superior = mid;
+//       } else {
+//         inferior = mid;
+//       } // if
+//       console.log(inferior, superior);
+//     }
+//   } // while
+//   Adivinar();
 
 // 4.- 
 
